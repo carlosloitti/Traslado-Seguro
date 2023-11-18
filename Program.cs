@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Traslado_Seguro.Data;
+
 namespace Traslado_Seguro
 {
     public class Program
@@ -9,7 +12,7 @@ namespace Traslado_Seguro
             // Add services to the container.
             builder.Services.AddRazorPages();
 
-
+            
 
 
             builder.Services.AddAuthentication().AddCookie("MyCookieAuth", options =>
