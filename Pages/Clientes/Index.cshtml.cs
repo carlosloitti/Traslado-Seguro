@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using Traslado_Seguro.Model;
 
 namespace Traslado_Seguro.Pages.Clientes
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly TrasladoSeguroContext _context;
