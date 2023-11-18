@@ -12,7 +12,9 @@ namespace Traslado_Seguro
             // Add services to the container.
             builder.Services.AddRazorPages();
 
-            
+            builder.Services.AddDbContext<TrasladoSeguroContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("TrasladoSeguroDB"))
+);
 
 
             builder.Services.AddAuthentication().AddCookie("MyCookieAuth", options =>
