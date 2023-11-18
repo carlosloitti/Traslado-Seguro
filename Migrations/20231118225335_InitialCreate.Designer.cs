@@ -11,7 +11,7 @@ using Traslado_Seguro.Data;
 namespace Traslado_Seguro.Migrations
 {
     [DbContext(typeof(TrasladoSeguroContext))]
-    [Migration("20231118205833_InitialCreate")]
+    [Migration("20231118225335_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

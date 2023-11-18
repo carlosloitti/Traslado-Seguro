@@ -8,6 +8,6 @@
 
         public string? Description { get; set; }
 
-        public ICollection<STransporte> STransportes { get; set; } = default!;
+        public ICollection<STransporte>? STransportes { get; set; } = default!;
     }
 }

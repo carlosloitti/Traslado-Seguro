@@ -1,4 +1,7 @@
-﻿namespace Traslado_Seguro.Model
+﻿using Microsoft.AspNetCore.Razor.TagHelpers;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Traslado_Seguro.Model
 {
     public class STransporte
     {
