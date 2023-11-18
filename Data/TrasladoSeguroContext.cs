@@ -3,7 +3,7 @@ using Traslado_Seguro.Model;
 
 namespace Traslado_Seguro.Data
 {
-    internal class TrasladoSeguroContext : DbContext
+    public class TrasladoSeguroContext : DbContext
     {
         public DbSet<STransporte> Transportes { get; set;}
 
